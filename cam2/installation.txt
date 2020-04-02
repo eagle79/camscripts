@@ -1,0 +1,16 @@
+camlauncher.desktop:
+	- update command properties with credentials and IP
+	- copy to /etc/xdg/autostart/
+	- create symbolic link to .desktop file in /home/pi/Desktop
+
+clean-archive.sh:
+	- put in camera upload directory on ftp server in own "scripts" 
+	  directory.
+	- update configuration variables (HOMEDIR and ARCHIVE_DAYS)
+	- add crontab entry (as root) in the form:
+	   0 1 * * * /<path-to-script>/clean-archive.sh > /<path-to-scripts-folder>/archive_cleanup.log 2>&1
+	- remove all permissions for all but root
+
+showcam.sh:
+	- not currently used.
+
