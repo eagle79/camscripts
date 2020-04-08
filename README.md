@@ -1,5 +1,4 @@
-STEPS TO SETUP Pi
-
+# STEPS TO SETUP PI FOR CAM
 * INITIAL INSTALL 
   * Install Raspbian standard distribution. Current version is Rasbian 10.
   * Go through usual setup steps.
