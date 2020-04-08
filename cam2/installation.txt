@@ -2,6 +2,8 @@ camlauncher.desktop:
 	- update command properties with credentials and IP
 	- copy to /etc/xdg/autostart/
 	- create symbolic link to .desktop file in /home/pi/Desktop
+	- open file manager, go to preferences > general; select 
+          "Don't ask options on launch executable file"
 
 clean-archive.sh:
 	- put in camera upload directory on ftp server in own "scripts" 
