@@ -1,4 +1,15 @@
-# STEPS TO SETUP PI FOR CAM
+# About camcripts - Nothing to see here, move along...
+This repository is primarily for personal use and contains resources and 
+notes for setting up a raspberry pi FTP server and monitor for a specific
+IP WiFi camera (all credential information has been removed, so don't 
+waste your time). There are also files for customizing things like vi and
+bash, but there's nothing particularly special about any of it. 
+
+I'm not a linux expert by an means, so I'm sure there are better ways to
+do much of what you can see here. Feel free to browse, fork, steal, 
+whatever... But I think you'll find it mostly useless.
+
+# Steps to setup pi for cam
 * INITIAL INSTALL 
   * Install Raspbian standard distribution. Current version is Rasbian 10.
   * Go through usual setup steps.
