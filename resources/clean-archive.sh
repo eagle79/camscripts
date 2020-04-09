@@ -3,9 +3,9 @@ set -e
 
 #SCRIPT CONFIGURATION
 #Set this to the directory containing the uploaded files for the camera
-HOMEDIR=/home/pi/Documents/repos/camscripts/cam2/AMC018A7_757298
+HOMEDIR=<CAM_HOME_DIR>
 #Set this to the number of days to keep archived, including the current date
-ARCHIVE_DAYS=2
+ARCHIVE_DAYS=5
 
 #FUNCTIONS
 delete_archive_dir () {

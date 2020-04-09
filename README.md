@@ -58,7 +58,7 @@ whatever... But I think you'll find it mostly useless.
     Comment=System monitoring tool
     Categories=Utility;
   * sudo reboot
-* RESTORE PREFERENCE FILES
+* RESTORE PREFERENCE FILES AND RESOURCES
   * Checkout the repository if not already done:
     * mkdir /home/pi/Documents/repos
     * cd /home/pi/Documents/repos
@@ -67,6 +67,7 @@ whatever... But I think you'll find it mostly useless.
   * cp ./pisetup/conf/home/bashrc /home/pi/.bashrc
   * cp ./pisetup/conf/home/gitconfig /home/pi/.gitconfig
   * sudo cp ./pisetup/conf/etc/vim/vimrc /etc/vim/vimrc
+  * sudo cp /home/pi/Documents/repos/resources/cam-icon.png /usr/share/pixmaps/
   * close and reopen terminal
 * ADD SCRIPTS AND AUTOMATION
   * By this point, the camera should be recording files via FTP. A directory
@@ -75,7 +76,7 @@ whatever... But I think you'll find it mostly useless.
     troubleshoot FTP setup.
   * cd /home/pi/Documents/repos/camscripts
   * sudo mkdir /srv/ftp/<CAM_DIR>/scripts
-  * sudo cp ./cam2/clean-archive.sh /srv/ftp/<CAM_DIR>/scripts
+  * sudo cp ./resources/clean-archive.sh /srv/ftp/<CAM_DIR>/scripts
   * edit /srv/ftp/<CAM_DIR>/scripts/clean-archive.sh as follows:
     * set HOMEDIR to /srv/ftp/<CAM_DIR>
     * set ARCHIVE_DAYS as desired (currently 5)
@@ -87,7 +88,7 @@ whatever... But I think you'll find it mostly useless.
     add this to the end of the crontab:
     0 2 * * * /srv/ftp/<CAM_DIR>/scripts/clean-archive.sh > /srv/ftp/<CAM_DIR>/scripts/archive_cleanup.log 2>&1
   * cd /home/pi/Documents/repos/camscripts
-  * sudo cp ./cam2/camlauncher.desktop /etc/xdg/autostart/
+  * sudo cp ./resources/camlauncher.desktop /etc/xdg/autostart/
   * edit /etc/xdg/autostart/camlauncher.desktop and replace credentials and
     IP in command URL
   * ln -s /etc/xdg/autostart/camlauncher.desktop /home/pi/Desktop/camlauncher.desktop
