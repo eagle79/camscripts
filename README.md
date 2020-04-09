@@ -64,10 +64,10 @@ whatever... But I think you'll find it mostly useless.
     * cd /home/pi/Documents/repos
     * git clone https://github.com/eagle79/camscripts.git
     * cd camscripts
-  * cp ./pisetup/conf/home/bashrc /home/pi/.bashrc
-  * cp ./pisetup/conf/home/gitconfig /home/pi/.gitconfig
-  * sudo cp ./pisetup/conf/etc/vim/vimrc /etc/vim/vimrc
-  * sudo cp /home/pi/Documents/repos/resources/cam-icon.png /usr/share/pixmaps/
+  * cp ./conf/home/bashrc /home/pi/.bashrc
+  * cp ./conf/home/gitconfig /home/pi/.gitconfig
+  * sudo cp ./conf/etc/vim/vimrc /etc/vim/vimrc
+  * sudo cp ./resources/cam-icon.png /usr/share/pixmaps/
   * close and reopen terminal
 * ADD SCRIPTS AND AUTOMATION
   * By this point, the camera should be recording files via FTP. A directory
