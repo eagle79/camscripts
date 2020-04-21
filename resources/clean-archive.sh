@@ -26,8 +26,8 @@ cd $HOMEDIR
 
 CURR_DATE_STR=$(date --iso-8601=date)
 LIMIT_DATE_STR=$(date --date="-${ARCHIVE_DAYS} days" --iso-8601=date)
-
-echo "Cleaning cam2 archives..."
+echo "[" $(date) "]"
+echo "Cleaning camera archives in ${HOMEDIR}"
 echo "Archives recorded prior to $LIMIT_DATE_STR will be removed."
 
 #Loop through the subdirectories in the home directory
@@ -51,4 +51,8 @@ for DIR_NAME in */ ; do
 		fi
 	fi
 done
+
+echo "done."
+echo
+echo
 

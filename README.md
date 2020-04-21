@@ -15,6 +15,7 @@ whatever... But I think you'll find it mostly useless.
   * Go through usual setup steps.
   * Under preferences, change hostname to cams
   * Under preferences, enable ssh
+  * Under preferences, set correct timezone
 * INSTALL FULL VIM DISTRIBUTION
   * sudo apt update
   * sudo apt install vim
@@ -80,13 +81,13 @@ whatever... But I think you'll find it mostly useless.
   * edit /srv/ftp/<CAM_DIR>/scripts/clean-archive.sh as follows:
     * set HOMEDIR to /srv/ftp/<CAM_DIR>
     * set ARCHIVE_DAYS as desired (currently 5)
-  * sudo touch /srv/ftp/<CAM_DIR>/scripts/archive_cleanup.log
+  * sudo touch /srv/ftp/archive_cleanup.log
   * sudo chmod 755 /srv/ftp/<CAM_DIR>/scripts
   * sudo chmod 740 /srv/ftp/<CAM_DIR>/scripts/clean-archive.sh
-  * sudo chmod 644 /srv/ftp/<CAM_DIR>/scripts/archive_cleanup.log
+  * sudo chmod 644 /srv/ftp/archive_cleanup.log
   * sudo crontab -e
     add this to the end of the crontab:
-    0 2 * * * /srv/ftp/<CAM_DIR>/scripts/clean-archive.sh > /srv/ftp/<CAM_DIR>/scripts/archive_cleanup.log 2>&1
+    0 2 * * * /srv/ftp/<CAM_DIR>/scripts/clean-archive.sh >> /srv/ftp/archive_cleanup.log 2>&1
   * cd /home/pi/Documents/repos/camscripts
   * sudo cp ./resources/camlauncher.desktop /etc/xdg/autostart/
   * edit /etc/xdg/autostart/camlauncher.desktop and replace credentials and
